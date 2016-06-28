@@ -1,0 +1,82 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mein erstes HTML-Dokument</title>
+</head>
+<body>
+
+  <br>
+
+  <h1>IMAGE VS. PICTURE</h1>
+
+  <br>
+
+  <h2>IMAGE</h2>
+
+    <p>
+    - img-Element zur Einbindung von Grafikdateien<br>
+    - "Standalone-Tag" ohne End-Tag <br>
+    - im XHTML wird der schließende Schrägstrich (/) benötigt </p>
+    <br>
+
+  <h3> PFLICHTANGABEN </h3>
+
+    <p>
+    - src (source): für die Referenz der Bilddatei <br>
+    - alt (alternative): Alternativtext, der angezeigt wird, wenn das Bild nicht geladen werden kann oder soll </p>
+    <br>
+
+  <h3> OPTIONALE ANGABEN </h3>
+
+    <p>
+    - height: Angabe der optionalen Höhe (empfehlenswert)<br>
+    - width: Angabe einer optionalen Breite (empfehlenswert)<br>
+    - sizes: kommagetrenne Liste mit einem Medienmerkmal und einer Größenangabe <br>
+    - srcset: eine Kommagetrenne Liste mehrerer URLs mit optinaler Angabe der Breite und Pixeldichte
+    - usemap: zeigt an, dass das Bild Teil einer verweissensitiven Grafik ist <br>
+    - crossorigin <br>
+    - usemap <br>
+    </p>
+    <br>
+
+  <h3> WEITERE INFOS </h3>
+
+  <p>
+    - Chrome und Safari zeigen den Alternativtext nicht an <br>
+    - Basic Support für jeden Browser <br>
+    - srcset wird nicht vom Internet Explorer unterstützt </p>
+    <br>
+    <br>
+
+  <h2> PICTURE</h2>
+
+    <p>
+    - Container mit dem mehrere Bildquellen referenziert werden können <br>
+    - es können mehrere Bildversionen für verschiedene Pixeldichten, Auflösungen und Bildformate zur Verfügung<br>
+    gestellt werden, aus der der Browser die passende Grafik auswählt<br>
+    - NUR ein Container für das darin enthaltene img-Element und evtl. vorhandene Source-Elemente<br>
+    </p>
+    <br>
+
+  <h3> PFLICHTANGABEN </h3>
+
+    <p>
+    - keine oder mehrere Source-Elemente<br>
+    - img-Element (inkl. src und alt)<br>
+    </p>
+    <br>
+
+  <h3> OPTIONALE ANGABEN </h3>
+
+    <p>
+    - media: erlaubt die Angabe eines Media-Query, das der User-Agent auswertet, um das gewünschte Source-Element auszuwählen<br>
+    - type: erlaubt die Angabe eines MIME-Typs für Ressourcen, die im Attribut srcset des Source-Elements angegeben wird<br>
+    </p>
+    <br>
+
+  <h3> WEITERE INFOS </h3>
+
+    <p>
+    - kein Basic Support für Safari
+    </p>
+    <br>
